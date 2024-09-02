@@ -12,9 +12,9 @@
     <section class="login-container">
         <h1>Volte a sua vida digital</h1>
         <p class="subtitulo">Escolha uma das opções para continuar</p>
-        <form action="post" onsubmit="" class="form-login">
+        <form action="post" class="form-login">
             <input type="email" name="email" placeholder="E-mail">
-            <input type="password" name="senha" placeholder="Password">   
+            <input type="password" name="senha" placeholder="Password">
         </form>
 
         <div class="texto-continue">
@@ -35,8 +35,17 @@
             </div>
         </section>
 
-        <input type="button" value="Login" class="btn-login">
+        <input type="button" value="Login" class="btn-login" onclick="envia()">
     </section>
+
+    <script>
+        function envia() {
+            let email = document.querySelector('input[name="email"]').value;
+            let senha = document.querySelector('input[name="senha"]').value;
+
+            alert(`Email: ${email}. Senha: ${senha}`);
+        }
+    </script>
 </body>
 
 </html>
