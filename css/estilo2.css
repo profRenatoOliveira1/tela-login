@@ -1,0 +1,122 @@
+:root {
+    --branco: #FFF;
+    --preto: #000;
+    --cinza-suave: #888;
+    --bg-branco-suave: #f0f0f0;
+    --borda-padrao: #ccc;
+    --borda-em-foco: #8AC0FF;
+    --bg-botao: #007bff;
+    --bg-social: #F7F7F7;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--bg-branco-suave);
+}
+
+.login-container {
+    background-color: var(--branco);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-container h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.subtitulo {
+    font-size: 14px;
+    color: var(--cinza-suave);
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form-login input[type="email"],
+.form-login input[type="password"] {
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid var(--borda-padrao);
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    color: var(--cinza-suave);
+}
+
+.form-login input[type="text"]:focus,
+.form-login input[type="password"]:focus {
+    border: 1px solid var(--borda-em-foco);
+}
+
+.btn-login {
+    background-color: var(--bg-botao);
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 60%;
+}
+
+.texto-continue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.texto-continue p {
+    margin-right: 10px;
+    font-size: 14px;
+    color: var(--cinza-suave);
+}
+
+.texto-continue hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid var(--borda-padrao);
+}
+
+.imagens {
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagens img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.social {
+    width: 80px;
+    height: 40px;
+    background-color: var(--bg-social);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
